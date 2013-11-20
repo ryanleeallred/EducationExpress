@@ -1,0 +1,24 @@
+$(document).ready(function() {
+
+
+var localStates = null;
+$.get('/states', function(data) {
+	localstates = data;	
+});
+localstates = data;
+console.log(localStates)
+
+
+
+var col = $('.Population').click(function () {
+ 	for(var i=0; i<states.length; i++) {
+ 
+   });
+for(var i =0; i < DataTemplate.statesData.length; i++){
+
+	}
+	res.send(); 
+});
+
+
+});
