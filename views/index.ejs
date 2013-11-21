@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  	<title>Education-Data</title>
+  	<title>United States Education-Data by State</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +29,9 @@
           <li><a href="#">Contact</a></li>
         </ul>
 
-        <h3 class="text-muted">Project name</h3>
+        <h2 class="text-muted">US Education Data Visualization</h2>
+        <h4 class="text-muted">How does your state compare?</h4>
+        <hr>
       </div>
  
       <div class="jumbotron">
@@ -57,8 +59,8 @@
 		};
 
 		info.update = function (props) {
-			this._div.innerHTML = '<h4>US Population Density</h4>' +  (props ?
-				'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>'
+			this._div.innerHTML = '<h4>Click the links below for data.</h4>' +  (props ?
+				'<b>' + props.name + '</b><br />' + props.density + ' '
 				: 'Hover over a state');
 		};
 
@@ -174,135 +176,153 @@
 <div class="row marketing">
         <div class="col-lg-6">
           <a href="#" class="Population"><h4>Population</h4></a>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
+          <p></p>
+			
           <a href="#" class="math_4th_basic"><h4>4th Graders with Basic Math Proficiency</h4></a>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <p></p>
 
           <a href="#" class="math_8th_basic"><h4>8th Graders with Basic Math Proficiency</h4></a>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-          <h4>4th Graders with Basic Reading Proficiency</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <p></p>
 
-          <h4>8th Graders with Basic Reading Proficiency</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="reading_4th_proficient"><h4>4th Graders with Basic Reading Proficiency</h4></a>
+          <p></p>
 
-          <h4>Spending Fiscal Year 2011 (Thousands of Dollars)</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-          <h4>Change in Spending 2010-2011 (Thousands of Dollars</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <a href="#" class="reading_8th_proficient"><h4>8th Graders with Basic Reading Proficiency</h4></a>
+          <p></p>
 
-          <h4>Number of Teachers (Thousands)</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="FY_2011"><h4>Spending Fiscal Year 2011 (Thousands of Dollars)</h4></a>
+          <p></p>
 
-          <h4>Percent Teachers with a Bachelors Degree</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-          <h4>Percent Teachers with a "Specialist" or Doctoral Degree</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <a href="#" class="Change_2010_2011"><h4>Change in Spending 2010-2011 (Thousands of Dollars</h4></a>
+          <p></p>
 
-          <h4>Percent of Teachers with 3 to 9 years of Experience</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="num_teachers_thous"><h4>Number of Teachers (Thousands)</h4></a>
+          <p></p>
 
-          <h4>Percnet of Teachers with over 20 years of Experience</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-          <h4>Average Class Size Secondary Schools</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <a href="#" class="teacher_perc_bach"><h4>Percent Teachers with a Bachelors Degree</h4></a>
+          <p></p>
 
-          <h4>Number of Elementary School Teachers (Thousands)</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="teacher_perc_edspecialist_or_doc"><h4>Percent Teachers with a "Specialist" or Doctoral Degree</h4></a>
+          <p></p>
 
-          <h4>K-12 Teachers Average Salary</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-          <h4>Average Salary Secondary Teachers</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <a href="#" class="teach_3_to_0"><h4>Percent of Teachers with 3 to 9 years of Experience</h4></a>
+          <p></p>
 
-          <h4>K-12 Students: Hours Per Day Spent in School 2008</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="over_20"><h4>Percnet of Teachers with over 20 years of Experience</h4></a>
+          <p></p>
 
-          <h4>K-12 Students: Hours Per Day Spent in School 2012</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="class_size_sec"><h4>Average Class Size Secondary Schools</h4></a>
+          <p></p>
 
-          <h4>K-12 Students: Hours Per Year Spent in School 2012</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="num_teachers_elem"> <h4>Number of Elementary School Teachers (Thousands)</h4></a>
+          <p></p>
 
-          <h4>Elementary Students: Hours Per Day Spent in School 2012</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="av_sal_thous"><h4>K-12 Teachers Average Salary</h4></a>
+          <p></p>
 
-          <h4>Secondary Students: Hours Per Day Spent in School 2012</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="av_sal_sec"><h4>Average Salary Secondary Teachers</h4></a>
+          <p></p>
 
-          <h4>High School Completion Rate Persons with Disabilities</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="hours_day_k12_08"><h4>K-12 Students: Hours Per Day Spent in School 2008</h4></a>
+          <p></p>
 
-          <h4>High School Completion Rate of Economically Disadvantaged Students</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="hours_day_k12_12"><h4>K-12 Students: Hours Per Day Spent in School 2012</h4></a>
+          <p></p>
 
-          <h4>Percentage of Adults with a Bacherlors Degree Ages 25 and up.</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="hours_year_k12_12"><h4>K-12 Students: Hours Per Year Spent in School 2012</h4></a>
+          <p></p>
+
+          <a href="#" class="hours_day_elem_12"><h4>Elementary Students: Hours Per Day Spent in School 2012</h4></a>
+          <p></p>
+
+          <a href="#" class="hours_day_sec_12"><h4>Secondary Students: Hours Per Day Spent in School 2012</h4></a>
+          <p></p>
+
+          <a href="#" class="comp_perc_disabilities"><h4>High School Completion Rate Persons with Disabilities</h4></a>
+          <p></p>
+
+          <a href="#" class="com_perc_econ_disadv"><h4>High School Completion Rate of Economically Disadvantaged Students</h4></a>
+          <p></p>
+
+          <a href="#" class="perc_bach_degree_25_plus"><h4>Percentage of Adults with a Bacherlors Degree Ages 25 and up.</h4></a>
+          <p></p>
 
         </div>
 
         <div class="col-lg-6">
-          <h4>Population Density (Persons Per Square Mile)</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <a href="#" class="pop_dens"><h4>Population Density (Persons Per Square Mile)</h4></a>
+          <p></p>
 
-          <h4>4th Grade Students who are Proficient in Math</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="math_4th_proficient"><h4>4th Grade Students who are Proficient in Math</h4></a>
+          <p></p>
 
-          <h4>8th Grade Students who are Proficient in Math</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-          <h4>4th Grade Students who are Proficient in Reading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <a href="#" class="math_8th_proficient"><h4>8th Grade Students who are Proficient in Math</h4></a>
+          <p></p>
 
-          <h4>8th Grade Students who are Proficient in Reading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="reading_4th_proficient"><h4>4th Grade Students who are Proficient in Reading</h4></a>
+          <p></p>
 
-          <h4>Spending for Fiscal Year 2010 (Thousands of Dollars)</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-          <h4>Percent Change in Public Education Spending 2010-2011</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <a href="#" class="reading_8th_proficient"><h4>8th Grade Students who are Proficient in Reading</h4></a>
+          <p></p>
 
-          <h4>Percentage of Teachers with Less than a Bachelors Degree</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="FY_2010"><h4>Spending for Fiscal Year 2010 (Thousands of Dollars)</h4></a>
+          <p></p>
 
-          <h4>Percentage of Teacher with a Masters Degree</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-          <h4>Percentage of Teachers with Less than 3 Years of Teaching</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <a href="#" class="perc_change"><h4>Percent Change in Public Education Spending 2010-2011</h4></a>
+          <p></p>
 
-          <h4>Percentage of Teachers with 10 to 20 Years of Experience</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="teacher_perc_less_bach"><h4>Percentage of Teachers with Less than a Bachelors Degree</h4></a>
+          <p></p>
 
-          <h4>Class Size Elementary School</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-          <h4>Number of Teachers (In Thousands)</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <a href="#" class="teacher_perc_mast"><h4>Percentage of Teacher with a Masters Degree</h4></a>
+          <p></p>
 
-          <h4>Number of Secondary School Teachers (In Thousands)</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="less_than_3"><h4>Percentage of Teachers with Less than 3 Years of Teaching</h4></a>
+          <p></p>
 
-          <h4>Average Salary of Elementary School Teachers (Thousands)</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-          <h4>K-12 Average Attendance 2008</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <a href="#" class="teach_10_to_20"><h4>Percentage of Teachers with 10 to 20 Years of Experience</h4></a>
+          <p></p>
 
-          <h4>K-12 Average Attendance 2012</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="class_size_elem"><h4>Class Size Elementary School</h4></a>
+          <p></p>
 
-          <h4>K-12 Number of School Days 2012</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="num_teachers_in_thous"><h4>Number of Teachers (In Thousands)</h4></a>
+          <p></p>
 
-          <h4>Percent Attending Elementary School 2012</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="num_teachers_sec"><h4>Number of Secondary School Teachers (In Thousands)</h4></a>
+          <p></p>
 
-          <h4>Percent Attending Secondary School 2012</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="av_sal_elem"><h4>Average Salary of Elementary School Teachers (Thousands)</h4></a>
+          <p></p>
 
-          <h4>Percentage of Adults 25 years and older who have graduated from High School</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="enrollment_perc_k12_08"><h4>K-12 Average Attendance 2008</h4></a>
+          <p></p>
 
-          <h4>Percent of Adults 25 years and older who have an Advanced Degree</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <a href="#" class="enrollment_perc_k12_12"><h4>K-12 Average Attendance 2012</h4></a>
+          <p></p>
+
+          <a href="#" class="days_year_k12_12"><h4>K-12 Number of School Days 2012</h4></a>
+          <p></p>
+
+          <a href="#" class="enrollment_perc_elem_12"><h4>Percent Attending Elementary School 2012</h4></a>
+          <p></p>
+
+          <a href="#" class="enrollment_perc_sec_12"><h4>Percent Attending Secondary School 2012</h4></a>
+          <p></p>
+
+          <a href="#" class="completion_percent"><h4>Percentage of Adults 25 years and older who have graduated from High School</h4></a>
+          <p></p>
+
+          <a href="#" class="comp_perc_limited_english"><h4>Graduation percentage of adults 25 years and older with limited english skills who have graduated from High School</h4></a>
+          <p></p>
+
+          <a href="#" class="perc_highschoolgrad_25_plus"><h4>Percent of Adults 25 years and older who have gradutated from highschool</h4></a>
+          <p></p>
+
+           <a href="#" class="Perc_Advanced_degree_25_plus"><h4>Percent of Adults 25 years and older who have an Advanced Degree</h4></a>
+          <p></p>
+
+           
 
           
 
@@ -311,11 +331,11 @@
   </div>
 </div>
 </div>
-      
+      <hr>
       </div>
 
       <div class="footer">
-        <p>&copy; Company 2013</p>
+        <center><p>&copy; Ryan Allred 2013</p></center>
       </div>
 
     </div> <!-- /container -->
